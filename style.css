@@ -10,7 +10,7 @@ body {
     background-color: red;
     border-radius: 50%;
     z-index: 1;
-    box-shadow: 1px 15px 10px gray;
+    box-shadow:0px 10px 3px black;
     bottom: 450px;
     
 }
@@ -23,11 +23,11 @@ body {
      animation-fill-mode: forwards;
      animation-timing-function:linear;
 }
-#Text {
+#text {
     bottom: 515px;
     position:absolute;
     z-index:1
 }
 @keyframes button1 {
-    25% {box-shadow: d }
+    50% {transform: translateY(0px); }
 }
