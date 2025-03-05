@@ -16,4 +16,11 @@ function yell_at_user() {
         button1.classList.add("angry");
         text.innerHTML = "Now try to catch me!";
     }
+    else if( clicks == 10) {
+        button1.classList.remove("angry");
+        const button2 = document.createElement("button2");
+        button2.classList.add("button1");
+        button2.classList.add("button2");
+        text.innerHTML = "Click that button instead.";
+    }
 }
