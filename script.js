@@ -1,7 +1,8 @@
 const button1 = document.getElementById("button1");
 let text = document.getElementById("Text");
 let clicks = 0;
-
+let click = new Audio("Assets/clicker.mp3");
+click.play();
 button1.addEventListener("click",yell_at_user);
 function yell_at_user() {
     clicks++;
@@ -22,5 +23,11 @@ function yell_at_user() {
         button2.classList.add("button1");
         button2.classList.add("button2");
         text.innerHTML = "Click that button instead.";
+    }
+    else if( clicks == 15){
+        text.innerHTML = "Alright thats it. Im out";
+    }
+    else if(clicks == 16){
+     button2.classList.remove("button2")
     }
 }
