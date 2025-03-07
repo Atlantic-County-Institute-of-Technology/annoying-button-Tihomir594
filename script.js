@@ -1,8 +1,8 @@
 const button1 = document.getElementById("button1");
 let text = document.getElementById("Text");
 let clicks = 0;
-let click = new Audio("Assets/clicker.mp3");
-click.play();
+var BUTTON = new Audio('Assets/BUTTON.mp3');
+BUTTON.play();
 button1.addEventListener("click",yell_at_user);
 function yell_at_user() {
     clicks++;
